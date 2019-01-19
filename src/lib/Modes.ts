@@ -231,7 +231,7 @@ export default class Modes {
 
 			let normVec: any = { x: distanceX / distance, y: distanceY / distance };
 			let repulseRadius: number = interactivity.modes.repulse.distance;
-			let velocity: number = 100;
+			let velocity: number = 20;
 			let repulseFactor: number = clamp(
 				(1 / repulseRadius) *
 					(-1 * Math.pow(distance / repulseRadius, 2) + 1) *
